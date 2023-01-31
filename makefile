@@ -18,7 +18,7 @@ test%:
 		git checkout test$* && \
 		git pull --rebase && \
 		echo "merging: \033[0;31morigin/master\033[0m" && \
-		git merge origin/master && \
+		git merge origin/git-rebase && \
 		echo "merging: \033[0;31m$$branch\033[0m" && \
 		git merge $$branch && \
 		git push && \
